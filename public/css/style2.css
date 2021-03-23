@@ -1,0 +1,63 @@
+.hero {
+    background: url("../images/banner.jpg");
+    height: 600px;
+    background-size: cover;
+    position: relative;
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.wave1 path {
+    fill: #008ce0;
+    mix-blend-mode: multiply;
+}
+
+.btn-head {
+    display: inline-block;
+    padding: 12px 60px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    color: #000;
+    font-weight: 600;
+    font-size: 2.5em;
+    animation: ani 2s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        box-shadow: 0 0 0 8px rgba(255, 220, 46, .9);
+    }
+    50% {
+        box-shadow: 0 0 0 32px rgba(255, 220, 46, .5);
+    }
+    100% {
+        box-shadow: 0 0 0 48px rgba(255, 220, 46, .2);
+    }
+}
+
+.btn-head:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.wave2 {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+}
+
+.wave2 path {
+    fill: #fff;
+}
